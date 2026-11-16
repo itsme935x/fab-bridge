@@ -1,0 +1,14 @@
+# Blender extension build output — rebuild with `blender --command extension build`
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

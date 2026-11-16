@@ -1,0 +1,25 @@
+schema_version = "1.0.0"
+
+id = "fab_bridge"
+version = "0.1.0"
+name = "Fab Bridge"
+tagline = "Browse and import Fab / Quixel Megascans assets"
+maintainer = "Fab Bridge contributors"
+type = "add-on"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+blender_version_min = "4.2.0"
+
+tags = ["Import-Export", "Material"]
+
+[build]
+# Tests are development-only; they are in the repo, not in the shipped zip.
+paths_exclude_pattern = ["tests/*", "**/__pycache__/*", "**/*.pyc"]
+
+[permissions]
+network = "Sign in to Fab and download assets you own"
+files = "Save, extract and cache downloaded assets"
+clipboard = "Read the Epic sign-in code from the clipboard"
